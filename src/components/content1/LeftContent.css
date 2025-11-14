@@ -1,0 +1,79 @@
+.LeftContent {
+  padding-right: 30px; /* 카드 오른쪽 대기공간 확보*/
+  overflow: hidden;
+}
+
+.LeftContent .swiper {
+  width: 100%;
+  height: 350px;
+}
+
+.LeftContent .mySwiper {
+  position: relative;
+}
+
+.LeftContent .swiper-slide {
+  width: 100%;
+  height: 350px;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.LeftContent .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  position: relative;
+}
+
+.LeftContent .swiper_type {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.LeftContent .swiper_text {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  right: 5%;
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+
+.LeftContent .swiper_link {
+  position: absolute;
+  bottom: 12%;
+  left: 5%;
+  font-size: 1rem;
+  border-radius: 30px;
+  background-color: black;
+  padding: 20px 50px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* .swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+} */
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  width: 44px;
+  height: 44px;
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+}

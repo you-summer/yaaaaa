@@ -1,0 +1,55 @@
+.Footer {
+  background-color: #161515;
+  display: flex;
+  padding: 3% 5%;
+  color: rgb(166, 166, 166);
+}
+
+.Footer .footer_left {
+  width: 80%;
+}
+
+.Footer .footer_left .footer_companyInfo {
+  width: 70%;
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.Footer .footer_left .footer_companyInfo > div {
+  font-size: 0.8rem;
+}
+
+.Footer .footer_left a {
+  text-decoration: none;
+  color: rgb(166, 166, 166);
+}
+
+.Footer .hilight {
+  color: rgb(178, 178, 0);
+}
+
+.Footer .footer_reserved {
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+
+.Footer select {
+  width: 230px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0 24px;
+  appearance: none;
+  background-image: url(../assets/plus_white.png);
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.Footer option {
+  color: #9b9b9b;
+}

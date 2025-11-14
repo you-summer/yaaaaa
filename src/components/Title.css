@@ -1,0 +1,8 @@
+.Title .title_link {
+  text-decoration: none;
+  color: black;
+}
+
+.Title {
+  display: flex;
+}
