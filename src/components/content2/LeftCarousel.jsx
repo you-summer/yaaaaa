@@ -47,8 +47,6 @@ const LeftCarousel = () => {
       </Swiper>
       <div className="leftcarousel-button-next" ref={prevRef}></div>
       <div className="leftcarousel-button-prev" ref={nextRef}></div>
-      {/* <div className="swiper-button-next" ref={prevRef}></div>
-      <div className="swiper-button-prev" ref={nextRef}></div> */}
     </div>
   );
 };
