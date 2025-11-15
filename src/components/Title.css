@@ -1,8 +1,9 @@
-.Title .title_link {
+.Title {
   text-decoration: none;
   color: black;
 }
 
-.Title {
+.title_wrapper {
   display: flex;
+  align-items: flex-end;
 }

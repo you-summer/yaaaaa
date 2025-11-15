@@ -16,11 +16,9 @@ import { Autoplay, Pagination, Navigation, EffectCards } from "swiper/modules";
 import { contentData } from "../../util/content_data.js";
 import { Link } from "react-router";
 
-import leftArrow from "../../assets/icon_arrow_left.svg";
-import rightArrow from "../../assets/icon_arrow_right.svg";
-
 const LeftContent = () => {
-  const progressCircle = useRef(null);
+  const prevRef1 = useRef(null);
+  const nextRef1 = useRef(null);
   return (
     <div className="LeftContent">
       <Swiper
@@ -33,6 +31,7 @@ const LeftContent = () => {
         centeredSlides={true}
         pagination={{
           clickable: true,
+          el: ".custom-pagination",
         }}
         autoplay={{
           delay: 3000,
@@ -41,8 +40,8 @@ const LeftContent = () => {
         modules={[Autoplay, Pagination, Navigation, EffectCards]}
         className="mySwiper"
         navigation={{
-          nextEl: ".swiper-button-next", //다음버튼
-          prevEl: ".swiper-button-prev", //이전버튼
+          prevEl: ".leftcontent-button-prev",
+          nextEl: ".leftcontent-button-next",
         }}
       >
         {contentData.map((item) => {
@@ -57,14 +56,13 @@ const LeftContent = () => {
             </SwiperSlide>
           );
         })}
-
-        <div className="swiper-button-next">
-          {/* <img src={rightArrow} /> */}
-        </div>
-        <div className="swiper-button-prev">
-          {/* <img src={leftArrow} /> */}
-        </div>
       </Swiper>
+
+      <div className="leftcontent_custom">
+        <div className="leftcontent-button-prev" ref={nextRef1}></div>
+        <div className="custom-pagination"></div>
+        <div className="leftcontent-button-next" ref={prevRef1}></div>
+      </div>
     </div>
   );
 };

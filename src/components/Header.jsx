@@ -6,6 +6,11 @@ import { useState } from "react";
 
 const Header = () => {
   const [showContent, setShowContent] = useState(false);
+  const [selectLang, setSelectLang] = useState("KR");
+
+  const onChangeLang = (e) => {
+    return setSelectLang(e.target.value);
+  };
 
   return (
     <div className="Header">
@@ -25,7 +30,7 @@ const Header = () => {
           <Link to={"/"}>About</Link>
         </div>
         <div className="header_rigth">
-          <select name="language" value="KR">
+          <select name="language" onChange={onChangeLang} value={selectLang}>
             <option value="KR">KR</option>
             <option value="EN">EN</option>
           </select>

@@ -1,6 +1,10 @@
 .LeftContent {
-  padding-right: 30px; /* 카드 오른쪽 대기공간 확보*/
+  padding-right: 30px;
+  /*카드 오른쪽 대기공간 확보*/
   overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .LeftContent .swiper {
@@ -62,18 +66,58 @@
   cursor: pointer;
 }
 
-/* .swiper-button-next::after,
-.swiper-button-prev::after {
-  display: none;
-} */
+.swiper-pagination-bullet {
+  background-color: white;
+}
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: white;
-  width: 44px;
-  height: 44px;
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: auto;
 }
 
 .swiper-pagination-bullet {
-  background-color: white;
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+}
+.swiper-pagination-bullet-active {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+
+.LeftContent .leftcontent_custom {
+  display: flex;
+  justify-content: center; /* 가운데 정렬 */
+  align-items: center;
+  gap: 10px;
+}
+
+.LeftContent .custom-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.LeftContent .leftcontent-button-next::after,
+.LeftContent .leftcontent-button-prev::after {
+  display: none !important;
+}
+
+.LeftContent .leftcontent-button-next,
+.LeftContent .leftcontent-button-prev {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.LeftContent .leftcontent-button-next {
+  background-image: url("../../assets/icon_arrow_right.svg");
+}
+
+.LeftContent .leftcontent-button-prev {
+  background-image: url("../../assets/icon_arrow_left.svg");
 }
