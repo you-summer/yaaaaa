@@ -3,6 +3,8 @@
   display: flex;
   gap: 80px;
 
+  padding: 0 88px;
+
   padding-top: 30px;
 }
 .ContentMid1 .contentMid1_left {
@@ -11,6 +13,5 @@
 
 .ContentMid1 .contentMid1_right {
   width: 25%;
-  border: 1px solid purple;
   display: flex;
 }

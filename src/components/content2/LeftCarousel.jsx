@@ -20,7 +20,7 @@ const LeftCarousel = () => {
   return (
     <div className="LeftCarousel">
       <Swiper
-        spaceBetween={25} // 슬라이드 간격 없앰
+        spaceBetween={25}
         slidesPerView={3.2} // 한 화면에 5개 보임
         slidesPerGroup={1} // 이동할 때 5개씩 이동
         // centeredSlides={false} // 왼쪽 시작 // true 중앙시작
@@ -31,8 +31,6 @@ const LeftCarousel = () => {
         navigation={{
           prevEl: ".leftcarousel-button-prev",
           nextEl: ".leftcarousel-button-next",
-          // prevEl: ".swiper-button-prev",
-          // nextEl: ".swiper-button-next",
         }}
         className="leftCarousel"
       >

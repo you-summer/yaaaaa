@@ -43,6 +43,7 @@ const LeftContent = () => {
           prevEl: ".leftcontent-button-prev",
           nextEl: ".leftcontent-button-next",
         }}
+        loop={true}
       >
         {contentData.map((item) => {
           return (
