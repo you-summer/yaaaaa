@@ -20,23 +20,21 @@ const LeftContent = () => {
   return (
     <div className="LeftContent">
       <Swiper
+        modules={[Autoplay, Pagination, Navigation, EffectCards]}
         effect={"cards"}
-        spaceBetween={10}
         cardsEffect={{
           perSlideRotate: 0, // 각 카드 기본 회전 각도
           rotate: 0, // 전체 회전 0
         }}
-        centeredSlides={true}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
         }}
         pagination={{
-          clickable: true,
           el: ".custom-pagination",
+          clickable: true,
         }}
-        modules={[Autoplay, Pagination, Navigation, EffectCards]}
-        className="mySwiper"
+        className="LeftContent_swiper"
         navigation={{
           prevEl: ".leftcontent-button-prev",
           nextEl: ".leftcontent-button-next",

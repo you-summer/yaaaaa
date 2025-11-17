@@ -1,6 +1,7 @@
 .CarouselTest {
   position: relative;
 }
+
 .CarouselTest .carouselTest_link {
   text-decoration: none;
 }
@@ -17,8 +18,12 @@
   flex-direction: column;
   cursor: pointer;
 }
+
+/* ///////////// */
+/* 연구보고서 css */
+/* ///////////// */
 .CarouselTest .type_report .carouselTest_img {
-  width: 100%;
+  width: 80%;
   height: 100%;
   /* object-fit: cover; */
   transition: all 0.3s ease;
@@ -35,10 +40,14 @@
   transition: all 0.3s ease;
 }
 
+.CarouselTest .report_date {
+  margin-top: 15px;
+}
+
 .CarouselTest .custom-button-prev,
 .CarouselTest .custom-button-next {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   padding: 10px;
   border: none;
@@ -99,8 +108,6 @@
 .type_trend {
   width: 100% !important;
   height: auto;
-  /* padding-right: 80px; */
-  /* margin-right: 80px; */
 
   position: relative;
 }
@@ -119,7 +126,7 @@
 .trend_date {
   position: absolute;
   color: white;
-  /* padding: 0 45px; */
+  padding: 0 15%;
 }
 
 .trend_text {
@@ -127,9 +134,12 @@
 }
 
 .trend_date {
-  top: 90%;
+  top: 87%;
 }
 
+/* ////////////// */
+/* pagination css */
+/* ////////////// */
 .swiper-pagination-bullet {
   background-color: white;
 }

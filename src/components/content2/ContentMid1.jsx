@@ -1,4 +1,3 @@
-import MidRigthContent1 from "./MidRightContent1";
 import Title from "../Title";
 import CarouselTest from "../CarouselTest";
 import "./ContentMid1.css";
@@ -16,7 +15,16 @@ const ContentMid1 = () => {
         />
       </div>
       <div className="contentMid1_right">
-        <MidRigthContent1 />
+        <div className="rightContent_wrapper">
+          <Title text={"동향보고서"} url={"/"} />
+          <CarouselTest
+            type={"trend"}
+            spaceBetween={0}
+            slidesPerView={1}
+            slidesPerGroup={1}
+            scrollBarHide={true}
+          />
+        </div>
       </div>
     </div>
   );

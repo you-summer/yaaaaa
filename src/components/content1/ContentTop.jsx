@@ -14,12 +14,6 @@ const ContentTop = () => {
     <div className="ContentTop contentWrapper">
       <div className="contentTop_left">
         <LeftContent />
-        {/* <CarouselTest
-          type={"top"}
-          scrollbar={true}
-          spaceBetween={10}
-          effect={"cards"}
-        /> */}
       </div>
       <div className="contentTop_right">
         {rightContent.map((item) => {

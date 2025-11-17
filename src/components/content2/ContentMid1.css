@@ -1,16 +1,9 @@
 .ContentMid1 {
-  position: relative;
-  max-width: 1290px;
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-
   width: 100%;
   display: flex;
   gap: 80px;
 
-  padding-top: 30px;
+  padding: 30px 0 50px 0;
 }
 .ContentMid1 .contentMid1_left {
   width: 75%;
@@ -18,5 +11,9 @@
 
 .ContentMid1 .contentMid1_right {
   width: 25%;
-  display: flex;
+}
+
+.rightContent_wrapper {
+  width: 100% !important;
+  padding-right: 80px;
 }

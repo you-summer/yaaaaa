@@ -1,0 +1,35 @@
+.ContentMid4 .mid4_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ContentMid4 {
+  background-color: #f5ebe1;
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+
+.ContentMid4 .mid4_subTitle {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.ContentMid4 .mid4_title > a {
+  text-decoration: none;
+}
+
+.ContentMid4 .mid4_sub {
+  border-radius: 50px;
+  background-color: #f25430;
+  padding: 20px 50px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  color: white;
+}
+
+.ContentMid4 .mid4_sns_wrapper {
+  display: flex;
+  gap: 25px;
+}

@@ -6,4 +6,10 @@
 .title_wrapper {
   display: flex;
   align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+.Title .small {
+  width: 10x;
+  height: 10px;
 }

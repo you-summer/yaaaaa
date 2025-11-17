@@ -90,12 +90,15 @@
   justify-content: center; /* 가운데 정렬 */
   align-items: center;
   gap: 10px;
+  padding-top: 10px;
 }
 
 .LeftContent .custom-pagination {
   display: flex;
   justify-content: center;
   gap: 10px;
+
+  z-index: 10;
 }
 
 .LeftContent .leftcontent-button-next::after,
