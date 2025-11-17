@@ -10,7 +10,7 @@ const ContentTop = () => {
   ];
 
   return (
-    <div className="ContentTop">
+    <div className="ContentTop contentWrapper">
       <div className="contentTop_left">
         <LeftContent />
       </div>

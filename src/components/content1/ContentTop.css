@@ -1,9 +1,6 @@
 .ContentTop {
-  width: 100%;
   display: flex;
   gap: 80px;
-
-  padding: 0 88px;
 }
 
 .ContentTop .contentTop_left {

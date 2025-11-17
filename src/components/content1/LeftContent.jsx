@@ -48,10 +48,10 @@ const LeftContent = () => {
         {contentData.map((item) => {
           return (
             <SwiperSlide>
-              <img src={item.bgImg} className="swiper_img" />
+              <img src={item.img} className="swiper_img" />
               <div className="swiper_type">• {item.type}</div>
               <div className="swiper_text">{item.text}</div>
-              <Link className="swiper_link" to={""}>
+              <Link className="swiper_link" to={item.url}>
                 자세히보기
               </Link>
             </SwiperSlide>

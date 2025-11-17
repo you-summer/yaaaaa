@@ -1,9 +1,14 @@
 .ContentMid1 {
+  position: relative;
+  max-width: 1290px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
   width: 100%;
   display: flex;
   gap: 80px;
-
-  padding: 0 88px;
 
   padding-top: 30px;
 }

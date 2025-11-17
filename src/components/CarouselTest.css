@@ -1,0 +1,94 @@
+.CarouselTest {
+  position: relative;
+}
+.CarouselTest .carouselTest_link {
+  text-decoration: none;
+}
+
+.CarouselTest .swiper-wrapper {
+  position: relative;
+  padding-bottom: 5%;
+}
+
+.CarouselTest .carouselTest_div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.CarouselTest .type_report .carouselTest_img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  transition: all 0.3s ease;
+}
+
+.CarouselTest .type_report .carouselTest_date {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #999999;
+}
+
+.CarouselTest .type_report > img:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.CarouselTest .custom-button-prev,
+.CarouselTest .custom-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  border: none;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.CarouselTest .custom-button-next {
+  background-image: url("../assets/icon_arrow_right.svg");
+  right: -25px;
+}
+
+.CarouselTest .custom-button-prev {
+  background-image: url("../assets/icon_arrow_left.svg");
+  left: -25px;
+}
+
+.CarouselTest .content_content {
+  color: #f54b1e;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.content_text {
+  font-size: 1.2rem;
+  text-align: left;
+  color: black;
+
+  overflow: hidden;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.content_date {
+  padding: 10px 0;
+  font-size: 0.8rem;
+  color: #999999;
+}
+
+.content_img {
+  width: 100%;
+  border-radius: 20px;
+}

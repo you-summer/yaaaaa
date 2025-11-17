@@ -9,25 +9,30 @@ export const reportData = [
     id: 1,
     img: img1,
     date: "2025.02.07",
+    url: "/",
   },
   {
     id: 2,
     img: img2,
     date: "2025.01.09",
+    url: "/",
   },
   {
     id: 3,
     img: img3,
     date: "2024.04.11",
+    url: "/",
   },
   {
     id: 4,
     img: img4,
     date: "2024.02.09",
+    url: "/",
   },
   {
     id: 5,
     img: img5,
     date: "2024.01.30",
+    url: "/",
   },
 ];
