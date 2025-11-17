@@ -1,7 +1,6 @@
 import CarouselTest from "../CarouselTest";
 import Title from "../Title";
 import "./ContentMid2.css";
-// import MidContentCarousel from "./MidContentCarousel";
 import "../ContentWrapper.css";
 
 const ContentMid2 = () => {
@@ -12,8 +11,8 @@ const ContentMid2 = () => {
         <CarouselTest
           type={"report"}
           spaceBetween={20}
-          slidesPerView={4.5} // 한 화면에 5개 보임
-          slidesPerGroup={1} // 이동할 때 5개씩 이동
+          slidesPerView={4.5} // 한 화면에 x개 보임
+          slidesPerGroup={1} // 이동할 때 x개씩 이동
         />
       </div>
     </div>

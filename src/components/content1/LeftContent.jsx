@@ -17,8 +17,6 @@ import { contentData } from "../../util/content_data.js";
 import { Link } from "react-router";
 
 const LeftContent = () => {
-  const prevRef1 = useRef(null);
-  const nextRef1 = useRef(null);
   return (
     <div className="LeftContent">
       <Swiper
@@ -29,13 +27,13 @@ const LeftContent = () => {
           rotate: 0, // 전체 회전 0
         }}
         centeredSlides={true}
-        pagination={{
-          clickable: true,
-          el: ".custom-pagination",
-        }}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+          el: ".custom-pagination",
         }}
         modules={[Autoplay, Pagination, Navigation, EffectCards]}
         className="mySwiper"
@@ -58,11 +56,10 @@ const LeftContent = () => {
           );
         })}
       </Swiper>
-
       <div className="leftcontent_custom">
-        <div className="leftcontent-button-prev" ref={nextRef1}></div>
+        <div className="leftcontent-button-prev"></div>
         <div className="custom-pagination"></div>
-        <div className="leftcontent-button-next" ref={prevRef1}></div>
+        <div className="leftcontent-button-next"></div>
       </div>
     </div>
   );
