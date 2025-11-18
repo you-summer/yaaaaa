@@ -1,5 +1,5 @@
 # 야놀자 리서치 웹사이트 레이아웃 분석 및 구현
-<img width="1501" height="412" alt="image" src="https://github.com/user-attachments/assets/1f6fd6b7-87f5-47cc-b086-fac104f128de" />
+<img width="1501" height="612" alt="image" src="https://github.com/user-attachments/assets/1f6fd6b7-87f5-47cc-b086-fac104f128de" />
 - 배포주소 -> https://yanolja-plum.vercel.app/
 
 
