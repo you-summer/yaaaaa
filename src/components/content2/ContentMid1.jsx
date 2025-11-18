@@ -1,5 +1,5 @@
 import Title from "../Title";
-import CarouselTest from "../CarouselTest";
+import Carousel from "../Carousel";
 import "./ContentMid1.css";
 
 const ContentMid1 = () => {
@@ -7,7 +7,7 @@ const ContentMid1 = () => {
     <div className="ContentMid1 contentWrapper">
       <div className="contentMid1_left">
         <Title text={"인사이트 / 브리프"} url={"/"} />
-        <CarouselTest
+        <Carousel
           type={"content"}
           spaceBetween={25}
           slidesPerView={3.2} // 한 화면에 5개 보임
@@ -17,7 +17,7 @@ const ContentMid1 = () => {
       <div className="contentMid1_right">
         <div className="rightContent_wrapper">
           <Title text={"동향보고서"} url={"/"} />
-          <CarouselTest
+          <Carousel
             type={"trend"}
             spaceBetween={0}
             slidesPerView={1}

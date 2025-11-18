@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { reportData } from "../util/report_data";
+import { reportData } from "../util/report_data.js";
 import { contentData } from "../util/content_data.js";
-import { trendsData } from "../util/trends_data";
+import { trendsData } from "../util/trends_data.js";
 
 // Import Swiper styles
 import "swiper/css";
@@ -14,35 +14,33 @@ import "swiper/css/effect-cards";
 // import required modules
 import { Scrollbar, Navigation, Pagination } from "swiper/modules";
 
-import "./CarouselTest.css";
+import "./Carousel.css";
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
 
-const CarouselTest = ({
+const Carousel = ({
   type,
   spaceBetween,
   slidesPerView,
   slidesPerGroup,
   scrollBarHide,
 }) => {
-  const [dataTest, setDataTest] = useState([]);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     if (type === "report") {
-      setDataTest(reportData);
+      setData(reportData);
     } else if (type === "content") {
-      setDataTest(contentData);
+      setData(contentData);
     } else if (type === "trend") {
-      setDataTest(trendsData);
+      setData(trendsData);
     }
   }, [type]);
 
-  console.log(type);
-  console.log(dataTest);
   return (
-    <div className="CarouselTest">
+    <div className="Carousel">
       <Swiper
-        className="CarouselTest_tt"
+        className="Carousel_tt"
         spaceBetween={spaceBetween} // 공간s
         slidesPerView={slidesPerView} // 한 화면에 n개 보임
         slidesPerGroup={slidesPerGroup} // 이동할 때 n개씩 이동
@@ -57,22 +55,19 @@ const CarouselTest = ({
         }}
         modules={[Scrollbar, Navigation, Pagination]}
       >
-        {dataTest.map((item) => {
+        {data.map((item) => {
           return (
             <SwiperSlide>
-              <Link to={item.url} className="carouselTest_link">
-                <div className={`carouselTest_div type_${type}`}>
-                  <img
-                    src={item.img}
-                    className={`carouselTest_img ${type}_img`}
-                  />
-                  <div className={`carouselTest_type ${type}_content`}>
+              <Link to={item.url} className="carousel_link">
+                <div className={`carousel_div type_${type}`}>
+                  <img src={item.img} className={`carousel_img ${type}_img`} />
+                  <div className={`carousel_type ${type}_content`}>
                     {item.type ? item.type : ""}
                   </div>
                   <div className={`${type}_text`}>
                     {item.text ? item.text : ""}
                   </div>
-                  <div className={`carouselTest_date ${type}_date`}>
+                  <div className={`carousel_date ${type}_date`}>
                     {item.date}
                   </div>
                 </div>
@@ -93,4 +88,4 @@ const CarouselTest = ({
     </div>
   );
 };
-export default CarouselTest;
+export default Carousel;
