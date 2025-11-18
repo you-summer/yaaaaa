@@ -222,3 +222,10 @@ export default Title;
 < > 좌우 버튼으로 사용하는 div의 className이 동일하여 생긴 문제였습니다 </br>
 기존 className 뒤에 props로 받아온 type을 붙여서 각자 다 다른이름을 주어 해결하였습니다.
 
+- 페이지네이션 클릭시 페이지네이션 사용하는 모든 캐러셀이 다 같이 움직이는 문제
+```
+<div className={`custom-pagination-${type}`}></div>
+```
+위의 좌우버튼과 동일하게 className을 동일하게 주어 생긴 문제였습니다 </br>
+기존 className 뒤에 props로 받아온 type을 붙여 각자 다 다른이름을 사용하여 해결하였습니다.
+
