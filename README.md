@@ -1,4 +1,5 @@
 # 야놀자 리서치 웹사이트 레이아웃 분석 및 구현
+<img width="1501" height="412" alt="image" src="https://github.com/user-attachments/assets/1f6fd6b7-87f5-47cc-b086-fac104f128de" />
 - 배포주소 -> https://yanolja-plum.vercel.app/
 
 
@@ -9,7 +10,8 @@
 - 라이브러리
   - Swiper
   - framer-motion
-    
+- 반응형 제작
+  
 ---
 
 ### Swiper 사용 이유
@@ -228,4 +230,11 @@ export default Title;
 ```
 위의 좌우버튼과 동일하게 className을 동일하게 주어 생긴 문제였습니다 </br>
 기존 className 뒤에 props로 받아온 type을 붙여 각자 다 다른이름을 사용하여 해결하였습니다.
+
+---
+
+### 반응형 제작
+<img width="624" height="3930" alt="야놀자리서치" src="https://github.com/user-attachments/assets/2117ae72-a303-4dc3-bf6b-74d9a87e438b" />
+
+
 
