@@ -4,8 +4,8 @@
 
 ## 사용 기술
 - React (Vite 기반)
--   react-router
+  - react-router
 - JavaScript (ES6+)
 - 라이브러리
--   Swiper
--   framer-motion
+  - Swiper
+  - framer-motion
