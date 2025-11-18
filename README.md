@@ -212,4 +212,13 @@ export default Title;
 
 ---
 
+### 트러블슈팅
+
+- < > 좌우 버튼 클릭시 캐러셀들이 한꺼번에 좌우로 이동하는 문제
+```
+      <div className={`custom-button-next custom-button-next-${type}`}></div>
+      <div className={`custom-button-prev custom-button-prev-${type}`}></div>
+```
+< > 좌우 버튼으로 사용하는 div의 className이 동일하여 생긴 문제였습니다 </br>
+기존 className 뒤에 props로 받아온 type을 붙여서 각자 다 다른이름을 주어 해결하였습니다.
 
