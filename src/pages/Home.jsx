@@ -6,16 +6,31 @@ import ContentMid4 from "../components/content5/ContentMid4";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
+import FadeFrameMotion from "../components/FadeFrameMotion";
+
 const Home = () => {
   return (
     <>
       <Header />
+      <FadeFrameMotion>
+        <ContentTop />
+      </FadeFrameMotion>
 
-      <ContentTop />
-      <ContentMid1 />
-      <ContentMid2 />
-      <ContentMid3 />
-      <ContentMid4 />
+      <FadeFrameMotion>
+        <ContentMid1 />
+      </FadeFrameMotion>
+
+      <FadeFrameMotion>
+        <ContentMid2 />
+      </FadeFrameMotion>
+
+      <FadeFrameMotion>
+        <ContentMid3 />
+      </FadeFrameMotion>
+
+      <FadeFrameMotion>
+        <ContentMid4 />
+      </FadeFrameMotion>
 
       <Footer />
     </>

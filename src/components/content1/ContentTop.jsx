@@ -1,7 +1,6 @@
 import "./ContentTop.css";
 import LeftContent from "./LeftContent";
 import RightContent from "./RightContent";
-import CarouselTest from "../CarouselTest";
 
 const ContentTop = () => {
   const rightContent = [

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,6 +10,9 @@ import "swiper/css/navigation";
 
 import "./LeftContent.css";
 
+import playBtn from "../../assets/icon_play.svg";
+import pauseBtn from "../../assets/icon_pause.svg";
+
 // import required modules
 import { Autoplay, Pagination, Navigation, EffectCards } from "swiper/modules";
 
@@ -17,9 +20,18 @@ import { contentData } from "../../util/content_data.js";
 import { Link } from "react-router";
 
 const LeftContent = () => {
+  const swiperRef = useRef(null);
+
+  useEffect(() => {
+    if (swiperRef.current) {
+      swiperRef.current.autoplay.start();
+    }
+  });
+
   return (
     <div className="LeftContent">
       <Swiper
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
         modules={[Autoplay, Pagination, Navigation, EffectCards]}
         effect={"cards"}
         cardsEffect={{
@@ -57,6 +69,16 @@ const LeftContent = () => {
       <div className="leftcontent_custom">
         <div className="leftcontent-button-prev"></div>
         <div className="custom-pagination"></div>
+        <img
+          src={playBtn}
+          className="btnICon"
+          onClick={() => swiperRef.current.autoplay.start()}
+        />
+        <img
+          src={pauseBtn}
+          className="btnICon"
+          onClick={() => swiperRef.current.autoplay.stop()}
+        />
         <div className="leftcontent-button-next"></div>
       </div>
     </div>

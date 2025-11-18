@@ -43,7 +43,7 @@ const CarouselTest = ({
     <div className="CarouselTest">
       <Swiper
         className="CarouselTest_tt"
-        spaceBetween={spaceBetween} // 공간
+        spaceBetween={spaceBetween} // 공간s
         slidesPerView={slidesPerView} // 한 화면에 n개 보임
         slidesPerGroup={slidesPerGroup} // 이동할 때 n개씩 이동
         scrollbar={scrollBarHide ? false : true}

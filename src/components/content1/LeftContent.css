@@ -124,3 +124,7 @@
 .LeftContent .leftcontent-button-prev {
   background-image: url("../../assets/icon_arrow_left.svg");
 }
+
+.LeftContent .btnICon {
+  cursor: pointer;
+}
