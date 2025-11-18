@@ -234,7 +234,7 @@ export default Title;
 ---
 
 ### 반응형 제작
-<img width="624" height="6000" alt="야놀자리서치" src="https://github.com/user-attachments/assets/2117ae72-a303-4dc3-bf6b-74d9a87e438b" />
+<img width="624" height="8000" alt="야놀자리서치" src="https://github.com/user-attachments/assets/2117ae72-a303-4dc3-bf6b-74d9a87e438b" />
 
 
 
