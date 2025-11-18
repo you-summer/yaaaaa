@@ -1,6 +1,13 @@
 .ContentMid4 .mid4_title {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ContentMid4 .contentWrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .ContentMid4 {
@@ -14,7 +21,7 @@
   font-weight: 600;
 }
 
-.ContentMid4 .mid4_title > a {
+.ContentMid4 .contentWrapper > a {
   text-decoration: none;
 }
 
@@ -32,4 +39,17 @@
 .ContentMid4 .mid4_sns_wrapper {
   display: flex;
   gap: 25px;
+}
+
+/* 반응형 모바일가로 & 태블릿 세로 */
+@media (max-width: 768px) {
+  .ContentMid4 .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .ContentMid4 .mid4_sns_wrapper {
+    justify-content: center;
+  }
 }

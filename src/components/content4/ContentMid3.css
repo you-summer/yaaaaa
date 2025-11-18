@@ -104,3 +104,34 @@
 .ContentMid3 .news_title:hover {
   text-decoration: underline;
 }
+
+/* 반응형 모바일가로 & 태블릿 세로 */
+@media (max-width: 768px) {
+  .ContentMid3 {
+    flex-direction: column;
+    padding: 0px 15px;
+  }
+  .ContentMid3 .contentMid3_left {
+    width: 100%;
+  }
+  .ContentMid3 .contentMid3_right {
+    width: 100%;
+  }
+}
+
+/* 반응형 모바일가로 & 태블릿 세로 */
+@media (max-width: 566px) {
+  .ContentMid3 .right_wrapper {
+    padding: 20px;
+  }
+
+  .ContentMid3 .right_content > p {
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
+  .ContentMid3 .news_title,
+  .news_date {
+    font-size: 0.9rem;
+  }
+}
