@@ -234,6 +234,7 @@ export default Title;
 ---
 
 ### 반응형 제작
+기존사이트도 반응형에 대응하여 기기 크기 변화에 따라 레이아웃이 유연하게 재배치되도록 구현했습니다.
 <img width="400" height="8000" alt="야놀자리서치" src="https://github.com/user-attachments/assets/2117ae72-a303-4dc3-bf6b-74d9a87e438b" />
 
 
