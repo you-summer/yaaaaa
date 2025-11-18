@@ -173,4 +173,40 @@ const ContentMid2 = () => {
 export default ContentMid2;
 ```
 
+---
+### Title.jsx 컴포넌트 사용
+메인 페이지에서 자주 사용되고 있는 타이틀들을 (인사이트/브리프> , 동향보고서> , 연구보고서> , 데이터> , 더보기>) 하나의 컴포넌트로 사용하여 코드의 중복을 최소화하고 유지보수 효율성을 높였습니다.
+```
+import { Link } from "react-router";
+import "./Title.css";
+import arrow from "../assets/arrow_right.svg";
+
+const Title = ({ text, url, size }) => {
+  return (
+    <Link className="Title" to={url}>
+      <div className="title_wrapper">
+        <div className="title_div">
+          <h2>{text}</h2>
+        </div>
+        <div className="title_div2">
+          <img src={arrow} className={size ? size : ""} />
+        </div>
+      </div>
+    </Link>
+  );
+};
+export default Title;
+```
+
+```
+<Title text={"연구보고서"} url={"/"} />
+```
+이런식으로 제목과 url, size를 props로 보낸후 사용하고 있습니다
+
+---
+### frame-motion 사용 및 선정이유
+기존의 야놀자리서치 페이지를 보면 스크롤을 내릴때 컴포넌트가 숨어있다가 나오는 모션이 취해집니다 </br>
+그래서 사용자 인터랙션에 반응하는 동적인 요소를 추가하기 위해 Framer Motion을 사용했습니다 </br>
+평소에도 깔끔하고 직관적인 홈페이지 레이아웃이나 모션에 관심이 많았는데 이번 프로젝트를 통해서 사용해볼수 있어서 좋았습니다
+
 
